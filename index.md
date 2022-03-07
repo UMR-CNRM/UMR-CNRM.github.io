@@ -6,7 +6,7 @@ For newcomers:
 
 1. set a github.com personal account (e.g. "PrenomNomMF") with your MF e-mail address
 2. send an e-mail to ???? asking to become a member of the organization, providing your github.com account user id.
-3. you will receive an invitation to join the organization, that you will have to accept.
+3. you will receive an invitation to join the organization, that you will just have to accept.
 
 Connectivity:
 -------------
@@ -25,6 +25,8 @@ connection protocols are available: SSH and HTTPS. From MF HPC, only HTTPS is al
 * *Generate new token*
 * set this token in any host `.netrc` file:
   `machine github.com login <your github userid> password <the generated token>`
+* tell Git to use the MF proxy certificate:
+  `export GIT_SSL_CAINFO=/usr/local/etc/proxy1.pem` (this path is for CNRM's machines; for HPC copy locally ?)
 
 To set a new repository on the UMR-CNRM forge:
 ----------------------------------------------
