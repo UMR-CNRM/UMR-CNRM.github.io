@@ -23,6 +23,7 @@ connection protocols are available: SSH and HTTPS. From MF HPC, only HTTPS is al
 ### HTTPS
 * go to your account *Settings* > *Developer settings* > *Personal access tokens*
 * *Generate new token*
+  (setting "repo" as scope, and with a reasonable expiry date)
 * set this token in any host `.netrc` file:
   `machine github.com login <your github userid> password <the generated token>`
 * tell Git to use the MF proxy certificate:
